@@ -171,7 +171,8 @@ git reset --hard HEAD
 5. Patikrinkite `GIT-PROBLEMS-FIX.md` Git problemoms
 6. Patikrinkite `MAC-GIT-CONFLICTS-FIX.md` Git konfliktų problemoms
 7. Patikrinkite `DEPENDENCIES-FIX.md` dependencies problemoms
-8. Naudokite scriptus automatiškai
+8. Patikrinkite `EXPO-START-PROBLEMS-FIX.md` Expo start problemoms
+9. Naudokite scriptus automatiškai
 
 ## 🔄 Atnaujinimai
 
