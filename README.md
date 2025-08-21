@@ -158,6 +158,21 @@ EXPO_PUBLIC_BACKEND_URL=http://194.135.95.218:8001
 ./scripts/start-expo-manual.sh
 ```
 
+### Prisijungimo Problemos:
+```bash
+# Prisijungimo problemos (rekomenduojama)
+./scripts/fix-connection-issues.sh
+
+# Tunnel start (be problemų)
+./scripts/start-expo-tunnel.sh
+
+# Local network start
+./scripts/start-expo-local.sh
+
+# Manual start
+./scripts/start-expo-manual.sh
+```
+
 ### Build problemos:
 ```bash
 # Išvalykite cache
@@ -187,7 +202,8 @@ git reset --hard HEAD
 6. Patikrinkite `MAC-GIT-CONFLICTS-FIX.md` Git konfliktų problemoms
 7. Patikrinkite `DEPENDENCIES-FIX.md` dependencies problemoms
 8. Patikrinkite `EXPO-START-PROBLEMS-FIX.md` Expo start problemoms
-9. Naudokite scriptus automatiškai
+9. Patikrinkite `CONNECTION-PROBLEMS-FIX.md` prisijungimo problemoms
+10. Naudokite scriptus automatiškai
 
 ## 🔄 Atnaujinimai
 
