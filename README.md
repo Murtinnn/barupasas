@@ -143,6 +143,21 @@ EXPO_PUBLIC_BACKEND_URL=http://194.135.95.218:8001
 ./scripts/start-expo-simple.sh
 ```
 
+### Prisijungimo Problemos:
+```bash
+# Prisijungimo problemos (rekomenduojama)
+./scripts/fix-connection-issues.sh
+
+# Tunnel start (be problemų)
+./scripts/start-expo-tunnel.sh
+
+# Local network start
+./scripts/start-expo-local.sh
+
+# Manual start
+./scripts/start-expo-manual.sh
+```
+
 ### Build problemos:
 ```bash
 # Išvalykite cache
