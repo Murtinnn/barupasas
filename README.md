@@ -110,6 +110,24 @@ EXPO_PUBLIC_BACKEND_URL=http://194.135.95.218:8001
 ./scripts/fix-git-issues.sh
 ```
 
+### Mac Git Konfliktai:
+```bash
+# Force pull (rekomenduojama)
+./scripts/force-pull-mac.sh
+
+# Saugus sprendimas
+./scripts/fix-mac-git-conflicts.sh
+```
+
+### Dependencies Problemos:
+```bash
+# Dependencies fix (rekomenduojama)
+./scripts/fix-dependencies.sh
+
+# Expo Go build (greičiausias)
+./scripts/build-expo-go.sh
+```
+
 ### Build problemos:
 ```bash
 # Išvalykite cache
@@ -136,7 +154,8 @@ git reset --hard HEAD
 3. Patikrinkite `GIT-WORKFLOW.md` Git workflow instrukcijoms
 4. Patikrinkite `MAC-PERMISSIONS-FIX.md` permissions problemoms
 5. Patikrinkite `GIT-PROBLEMS-FIX.md` Git problemoms
-6. Naudokite scriptus automatiškai
+6. Patikrinkite `MAC-GIT-CONFLICTS-FIX.md` Git konfliktų problemoms
+7. Naudokite scriptus automatiškai
 
 ## 🔄 Atnaujinimai
 
