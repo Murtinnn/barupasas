@@ -15,7 +15,9 @@ npx eas-cli login
 
 # Mac build su iOS platforma
 echo "🔨 Pradedamas Mac build..."
-npx eas-cli build --platform ios --profile mac-ios --local
+echo "💡 Naudojame 'mac-build' profilį greičiam buildui..."
+
+npx eas-cli build --platform ios --profile mac-build --local
 
 echo "✅ Mac build baigtas!"
 echo "📱 .ipa failas yra build/ios/ aplanke"

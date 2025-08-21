@@ -21,17 +21,8 @@
         "resourceClass": "m-medium"
       }
     },
-    "mac-local": {
+    "mac-build": {
       "extends": "production",
-      "platform": "ios",
-      "ios": {
-        "resourceClass": "m-medium",
-        "buildConfiguration": "Release"
-      }
-    },
-    "mac-fast": {
-      "extends": "production",
-      "platform": "ios",
       "ios": {
         "resourceClass": "m-medium",
         "buildConfiguration": "Release"
