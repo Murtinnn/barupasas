@@ -15,11 +15,11 @@ while true; do
     git fetch origin
     
     LOCAL_COMMIT=$(git rev-parse HEAD)
-    REMOTE_COMMIT=$(git rev-parse origin/master)
+    REMOTE_COMMIT=$(git rev-parse origin/main)
     
     if [ "$LOCAL_COMMIT" != "$REMOTE_COMMIT" ]; then
         echo "🆕 Rasta naujų pakeitimų! Pulliname..."
-        git pull origin master
+        git pull origin main
         
         # Automatiškai įdiegiame dependencies
         if [ -f "package.json" ]; then

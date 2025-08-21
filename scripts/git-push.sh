@@ -27,10 +27,10 @@ git commit -m "🔄 Barupasas Mobile Update - $(date '+%Y-%m-%d %H:%M:%S')
 
 # Pushiname į remote
 echo "🚀 Pushiname į remote..."
-git push origin master
+git push origin main
 
 echo "✅ Git push baigtas!"
 echo "📱 Dabar galite Mac įrenginyje paleisti:"
-echo "   git pull origin master"
+echo "   git pull origin main"
 echo "💡 Arba naudoti automatinį pull scriptą:"
 echo "   ./scripts/git-pull.sh"

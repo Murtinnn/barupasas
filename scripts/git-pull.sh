@@ -5,7 +5,7 @@ echo "🔄 Atnaujiname kodą iš serverio..."
 
 # Pulliname pakeitimus
 echo "⬇️  Pulliname pakeitimus..."
-git pull origin master
+git pull origin main
 
 # Patikriname ar yra naujų dependencies
 if [ -f "package.json" ]; then
