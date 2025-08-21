@@ -155,7 +155,8 @@ git reset --hard HEAD
 4. Patikrinkite `MAC-PERMISSIONS-FIX.md` permissions problemoms
 5. Patikrinkite `GIT-PROBLEMS-FIX.md` Git problemoms
 6. Patikrinkite `MAC-GIT-CONFLICTS-FIX.md` Git konfliktų problemoms
-7. Naudokite scriptus automatiškai
+7. Patikrinkite `DEPENDENCIES-FIX.md` dependencies problemoms
+8. Naudokite scriptus automatiškai
 
 ## 🔄 Atnaujinimai
 
