@@ -1,0 +1,70 @@
+import 'dotenv/config';
+
+export default {
+  expo: {
+    name: "Barupasas",
+    slug: "barupasas-mobile",
+    version: "1.0.0",
+    orientation: "portrait",
+    icon: "./assets/icon.png",
+    userInterfaceStyle: "dark",
+    splash: {
+      image: "./assets/splash.png",
+      resizeMode: "contain",
+      backgroundColor: "#0a3848"
+    },
+    assetBundlePatterns: [
+      "**/*"
+    ],
+    ios: {
+      supportsTablet: false,
+      bundleIdentifier: "com.barupasas.mobile",
+      buildNumber: "1",
+      infoPlist: {
+        NSLocationWhenInUseUsageDescription: "Ši programėlė naudoja jūsų vietą, kad rastų netoliese esančius barus.",
+        NSLocationAlwaysAndWhenInUseUsageDescription: "Ši programėlė naudoja jūsų vietą, kad rastų netoliese esančius barus.",
+        NSCameraUsageDescription: "Ši programėlė naudoja kamerą nuotraukų darymui baruose.",
+        NSPhotoLibraryUsageDescription: "Ši programėlė naudoja nuotraukų galeriją nuotraukų pasirinkimui.",
+        ITSAppUsesNonExemptEncryption: false,
+        NSAppTransportSecurity: {
+          NSAllowsArbitraryLoads: true,
+          NSExceptionDomains: {
+            "194.135.95.218": {
+              NSExceptionAllowsInsecureHTTPLoads: true,
+              NSExceptionMinimumTLSVersion: "1.0",
+              NSExceptionRequiresForwardSecrecy: false,
+              NSIncludesSubdomains: true
+            }
+          }
+        }
+      }
+    },
+    android: {
+      adaptiveIcon: {
+        foregroundImage: "./assets/adaptive-icon.png",
+        backgroundColor: "#0a3848"
+      },
+      package: "com.barupasas.mobile"
+    },
+    web: {
+      favicon: "./assets/favicon.png"
+    },
+    extra: {
+      eas: {
+        projectId: "d0a85707-a79e-4256-bbb6-e49de16b86e8"
+      }
+    },
+    owner: "murtinnn",
+    plugins: [
+      [
+        "expo-build-properties",
+        {
+          ios: {
+            deploymentTarget: "15.1",
+            useFrameworks: "static"
+          }
+        }
+      ]
+    ]
+  }
+};

@@ -1,0 +1,72 @@
+#!/bin/bash
+
+echo "🍺 Barupasas Mobile - Git Workflow Sistema"
+echo "=============================================="
+echo ""
+
+echo "📱 KAS YRA SUKURTA:"
+echo "✅ Mac build konfigūracija (3-5x greičiau)"
+echo "✅ Xcode build scriptas (5-10x greičiau)"
+echo "✅ Git workflow scriptai"
+echo "✅ Automatinis sync sistema"
+echo ""
+
+echo "🚀 KAIP NAUDOTI:"
+echo ""
+
+echo "1️⃣  PIRMĄ KARTĄ SERVERYJE:"
+echo "   ./scripts/setup-git.sh"
+echo ""
+
+echo "2️⃣  PIRMĄ KARTĄ MAC ĮRENGINYJE:"
+echo "   git clone <your-repo-url> barupasas-mobile"
+echo "   cd barupasas-mobile"
+echo "   npm install"
+echo "   chmod +x scripts/*.sh"
+echo ""
+
+echo "3️⃣  KAS KARTĄ KAI DAROTE PAIKEITIMUS:"
+echo "   SERVERYJE: ./scripts/git-push.sh"
+echo "   MAC: ./scripts/git-pull.sh"
+echo ""
+
+echo "4️⃣  BUILD MAC ĮRENGINYJE:"
+echo "   ./scripts/build-mac.sh    # EAS build (rekomenduojama)"
+echo "   ./scripts/build-xcode.sh  # Xcode build (greičiausias)"
+echo ""
+
+echo "5️⃣  AUTOMATINIS SYNC (MAC):"
+echo "   ./scripts/git-sync.sh"
+echo ""
+
+echo "📋 SCRIPTŲ SĄRAŠAS:"
+echo "   setup-git.sh    - Nustato Git (1x serveryje)"
+echo "   git-push.sh     - Push pakeitimų (serveryje)"
+echo "   git-pull.sh     - Pull pakeitimų (Mac)"
+echo "   git-sync.sh     - Automatinis sync (Mac)"
+echo "   build-mac.sh    - Mac build (Mac)"
+echo "   build-xcode.sh  - Xcode build (Mac)"
+echo ""
+
+echo "⚡ GREIČIO POBŪDIS:"
+echo "   Cloud build: 15-30 min"
+echo "   Mac build:   3-8 min (3-5x greičiau)"
+echo "   Xcode build: 2-5 min (5-10x greičiau)"
+echo ""
+
+echo "📚 DAUGIAU INFORMACIJOS:"
+echo "   README.md         - Pagrindinės instrukcijos"
+echo "   BUILD-MAC.md      - Mac build instrukcijos"
+echo "   GIT-WORKFLOW.md   - Git workflow instrukcijos"
+echo ""
+
+echo "🎯 REZULTATAS:"
+echo "   Kodas automatiškai perkeliamas iš serverio į Mac"
+echo "   Buildai daug greičiau nei cloud"
+echo "   Automatinis sync ir dependency management"
+echo ""
+
+echo "💡 PATARIMAS:"
+echo "   Visada naudokite scriptus - jie automatiškai daro viską!"
+echo "   Mac build yra daug greičiau nei cloud build!"
+echo ""
