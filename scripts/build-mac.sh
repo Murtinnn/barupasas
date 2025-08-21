@@ -4,20 +4,18 @@ echo "🚀 Pradedamas Mac build Barupasas programėlei..."
 echo "📱 Platforma: iOS"
 echo "🖥️  Build tipas: Lokalus Mac build (daug greičiau)"
 
-# Patikriname ar EAS CLI yra įdiegtas
-if ! command -v eas &> /dev/null; then
-    echo "❌ EAS CLI nerastas. Įdiegiame..."
-    npm install -g @expo/cli
-    npm install -g eas-cli
+# Patikriname ar EAS CLI yra pasiekiamas per npx
+if ! npx eas-cli --version &> /dev/null; then
+    echo "📦 EAS CLI bus atsisiųstas automatiškai per npx..."
 fi
 
 # Prisijungiame prie Expo
 echo "🔐 Prisijungiame prie Expo..."
-eas login
+npx eas-cli login
 
 # Mac build su iOS platforma
 echo "🔨 Pradedamas Mac build..."
-eas build --platform ios --profile mac --local
+npx eas-cli build --platform ios --profile mac-ios --local
 
 echo "✅ Mac build baigtas!"
 echo "📱 .ipa failas yra build/ios/ aplanke"

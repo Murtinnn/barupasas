@@ -21,7 +21,7 @@
         "resourceClass": "m-medium"
       }
     },
-    "mac": {
+    "mac-ios": {
       "extends": "production",
       "platform": "ios",
       "ios": {
