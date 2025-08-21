@@ -128,6 +128,21 @@ EXPO_PUBLIC_BACKEND_URL=http://194.135.95.218:8001
 ./scripts/build-expo-go.sh
 ```
 
+### Expo Start Problemos:
+```bash
+# Versijų nesutapimas (rekomenduojama)
+./scripts/fix-version-mismatch.sh
+
+# Portų problemos
+./scripts/fix-port-issues.sh
+
+# macOS permissions
+./scripts/fix-macos-permissions.sh
+
+# Expo start (be problemų)
+./scripts/start-expo-simple.sh
+```
+
 ### Build problemos:
 ```bash
 # Išvalykite cache
