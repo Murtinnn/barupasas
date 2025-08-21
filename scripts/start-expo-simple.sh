@@ -2,7 +2,7 @@
 
 echo "🚀 Paleidžiame Expo development serverį..."
 echo "📱 Platforma: iOS"
-echo "🖥️  Build tipas: Expo Go (be System Events)"
+echo "🖥️  Build tipas: Local Network (be ngrok problemų)"
 
 # Patikriname ar Expo CLI yra pasiekiamas per npx
 if ! npx @expo/cli --version &> /dev/null; then
@@ -16,7 +16,12 @@ echo "💡 Nuskaitykite QR kodą su Expo Go programėle"
 echo ""
 
 # Naudojame custom portą, kad išvengtume konfliktų
-npx @expo/cli start --ios --port 8083
+echo "🌐 Paleidžiame local network start..."
+echo "💡 Įsitikinkite, kad iPhone ir Mac yra tame pačiame WiFi tinkle"
+echo "💡 Local network apeina ngrok permissions problemas!"
+
+# Paleidžiame local network start su custom portu
+npx @expo/cli start --localhost --ios --port 8083
 
 echo ""
 echo "✅ Expo development serveris paleistas!"
