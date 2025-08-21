@@ -89,6 +89,18 @@ EXPO_PUBLIC_BACKEND_URL=http://194.135.95.218:8001
 
 ## 🚨 Problemų Sprendimas
 
+### Mac Permissions Problemos:
+```bash
+# Greitas sprendimas (rekomenduojama)
+./scripts/quick-fix.sh
+
+# Homebrew sprendimas
+./scripts/install-mac-tools.sh
+
+# Manual fix
+./scripts/fix-mac-permissions.sh
+```
+
 ### Build problemos:
 ```bash
 # Išvalykite cache
