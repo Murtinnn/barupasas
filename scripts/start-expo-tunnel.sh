@@ -17,6 +17,12 @@ echo "💡 Tunnel apeina permissions problemas!"
 echo ""
 
 # Naudojame tunnel, kad apeiti permissions problemas
+# Pirmiausia įdiegiame ngrok per npx (be globalaus install)
+echo "📦 Įdiegiame ngrok per npx..."
+npx @expo/ngrok@^4.1.0 --version &> /dev/null || echo "ngrok bus įdiegtas automatiškai"
+
+# Paleidžiame tunnel start
+echo "🚀 Paleidžiame tunnel start..."
 npx @expo/cli start --tunnel --ios
 
 echo ""
