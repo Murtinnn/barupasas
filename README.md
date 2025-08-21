@@ -101,6 +101,15 @@ EXPO_PUBLIC_BACKEND_URL=http://194.135.95.218:8001
 ./scripts/fix-mac-permissions.sh
 ```
 
+### Git Problemos:
+```bash
+# Automatinis sprendimas (rekomenduojama)
+./scripts/auto-fix-git.sh
+
+# Manual sprendimas
+./scripts/fix-git-issues.sh
+```
+
 ### Build problemos:
 ```bash
 # Išvalykite cache
@@ -125,7 +134,9 @@ git reset --hard HEAD
 1. Patikrinkite šį README
 2. Patikrinkite `BUILD-MAC.md` Mac build instrukcijoms
 3. Patikrinkite `GIT-WORKFLOW.md` Git workflow instrukcijoms
-4. Naudokite scriptus automatiškai
+4. Patikrinkite `MAC-PERMISSIONS-FIX.md` permissions problemoms
+5. Patikrinkite `GIT-PROBLEMS-FIX.md` Git problemoms
+6. Naudokite scriptus automatiškai
 
 ## 🔄 Atnaujinimai
 
